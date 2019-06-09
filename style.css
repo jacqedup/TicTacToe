@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela', sans-serif;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #CFCFCF;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 2rem;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  margin: 15px;
+}
+
+.player > h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.player > .turn {
+  color: #00B900;
+}
+
+.player > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  
+}
+
+table {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.box{
+  width: 150px;
+  height: 150px;
+  background-color: #30AFFE;
+  text-align: center;
+  font-size: 6rem;
+  color: #FFF;
+}
+
+#new-game {
+  margin-top: 15px;
+}
+
+#rematch {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  border-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Toc Toe</title>
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1 id="messageBoard">Let's Play Tic Tac Toe</h1>
+  <div id="scoreboard">
+    <div class="player">
+      <h3 class="turn" id="playerX">Player X</h3>
+      <p id="playerXScoreboard">0</p>
+    </div>
+    <div class="player">
+      <h3 id="playerO">Player O</h3>
+      <p id="playerOScoreboard">0</p>
+    </div>
+  </div>
+  <table>
+    <tbody>
+      <tr> 
+        <td class="box" onclick="takeTurn(this, 1)"></td>
+        <td class="box" onclick="takeTurn(this, 2)"></td>
+        <td class="box" onclick="takeTurn(this, 4)"></td>
+      </tr>
+      <tr> 
+        <td class="box" onclick="takeTurn(this, 8)"></td>
+        <td class="box" onclick="takeTurn(this, 16)"></td>
+        <td class="box" onclick="takeTurn(this, 32)"></td>
+      </tr>
+      <tr> 
+        <td class="box" onclick="takeTurn(this, 64)"></td>
+        <td class="box" onclick="takeTurn(this, 128)"></td>
+        <td class="box" onclick="takeTurn(this, 256)"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p id="new-game">Click refresh to start new game.</p>
+  <button id="rematch" onclick="rematch()">Rematch</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
